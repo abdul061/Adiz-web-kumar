@@ -24,7 +24,7 @@ const Contact = () => {
     setSubmitText('Sending...');
     try {
       // Send form data to backend using the API URL from environment variables
-      await axios.post(`${process.env.REACT_APP_API_URL}/contact`, formData);
+      await axios.post(`https://appsail-50022714114.development.catalystappsail.in/contact`, formData);
       setSubmitText('Sent');
       // Clear the form after successful submission
       setFormData({ name: '', email: '', message: '' });
